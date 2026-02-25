@@ -25,9 +25,17 @@ fetch("https://jsonplaceholder.typicode.com/posts/6/comments")
         section.innerHTML = "<h2>Коментарі роботодавців</h2>";
 
         data.forEach(comment => {
-            section.innerHTML += `
-                <p><strong>${comment.name}</strong>: ${comment.body}</p>
+            const block = document.createElement("div");
+            block.style.marginBottom = "15px";
+            block.style.padding = "10px";
+            block.style.border = "1px solid #ccc";
+
+            block.innerHTML = `
+                <strong>${comment.name}</strong>
+                <p>${comment.body}</p>
             `;
+
+            section.appendChild(block);
         });
 
         document.querySelector("main").appendChild(section);

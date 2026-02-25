@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f6f8;
+    transition: 0.3s;
 }
 
 header {
@@ -20,6 +21,7 @@ section {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
+    transition: 0.3s;
 }
 
 footer {
@@ -29,10 +31,20 @@ footer {
     text-align: center;
 }
 
-/* Нічна тема */
-.dark {
+/* Темна тема */
+body.dark {
     background-color: #111;
     color: white;
+}
+
+body.dark section {
+    background-color: #222;
+    color: white;
+}
+
+body.dark header,
+body.dark footer {
+    background-color: black;
 }
 
 /* Модальне вікно */
@@ -51,4 +63,9 @@ footer {
     padding: 20px;
     width: 300px;
     margin: 10% auto;
+}
+
+body.dark .modal-content {
+    background: #333;
+    color: white;
 }
