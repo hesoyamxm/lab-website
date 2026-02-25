@@ -2,8 +2,6 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Резюме Завтонова Романа">
-    <meta name="author" content="Завтонов Роман">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме Завтонова Романа</title>
     <link rel="stylesheet" href="styles.css">
@@ -12,69 +10,59 @@
 
 <header>
     <h1>Завтонов Роман</h1>
-    <p><strong>Місто:</strong> Львів</p>
-    <p><strong>Телефон:</strong> +38077777777</p>
-    <p><strong>Email:</strong> zavtonovr@gmail.com</p>
+    <p>Місто: Львів</p>
+    <p>Телефон: +38077777777</p>
+    <p>Email: zavtonovr@gmail.com</p>
+    <button onclick="toggleTheme()">Змінити тему</button>
 </header>
 
-<hr>
-
 <main>
+    <section>
+        <h2>Про мене</h2>
+        <p>
+            Я студент спеціальності «Кібербезпека».
+            Цікавлюся програмуванням, розробкою сайтів та дизайном.
+            Вивчаю Python, C++, HTML та Java.
+        </p>
+    </section>
 
-<section>
-    <h2>Про мене</h2>
-    <p>
-        Я студент спеціальності «Кібербезпека».
-        Цікавлюся розробкою сайтів, програмуванням та веб-дизайном.
-        Вивчаю Python, C++, HTML та Java.
-        Прагну розвиватися у сфері кібербезпеки та інформаційних технологій.
-    </p>
-</section>
+    <section>
+        <h2>Освіта</h2>
+        <p>Національний університет «Львівська політехніка»</p>
+        <p>Спеціальність: Кібербезпека</p>
+        <p>Рік вступу: 2024</p>
+        <p>2 курс</p>
+    </section>
 
-<section>
-    <h2>Освіта</h2>
-    <article>
-        <h3>Національний університет «Львівська політехніка»</h3>
-        <p><strong>Спеціальність:</strong> Кібербезпека</p>
-        <p><strong>Рік вступу:</strong> 2024</p>
-        <p><strong>Курс:</strong> 2 курс</p>
-    </article>
-</section>
-
-<section>
-    <h2>Досвід роботи</h2>
-    <p>Професійного досвіду роботи поки що не маю.</p>
-    <p>
-        Виконую навчальні проєкти з програмування та веб-розробки.
-        Працюю з системою контролю версій Git.
-    </p>
-</section>
-
-<section>
-    <h2>Навички</h2>
-    <ul>
-        <li>Python</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>Git</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Мови</h2>
-    <ul>
-        <li>Українська — рідна</li>
-        <li>Англійська — рівень B1</li>
-    </ul>
-</section>
-
+    <section>
+        <h2>Навички</h2>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>Git</li>
+        </ul>
+    </section>
 </main>
 
-<hr>
-
 <footer>
-    <p>&copy; 2026 Завтонов Роман</p>
+    <p>© 2026 Завтонов Роман</p>
 </footer>
+
+<!-- Модальне вікно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Зворотній зв'язок</h3>
+        <form action="https://formspree.io/f/mrearwow" method="POST">
+            <input type="text" name="name" placeholder="Ім'я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон">
+            <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+        <button onclick="closeModal()">Закрити</button>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
