@@ -1,0 +1,57 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Box model */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+/* Список навичок */
+ul {
+    list-style-type: square;
+}
+
+/* Псевдоклас */
+li:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+/* Flexbox */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+}
